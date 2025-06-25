@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ - T.T.G Network</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .faq-container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-question {
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #004080;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .faq-question:hover {
+      background-color: #0066cc;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 1rem;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+   <div class="logo">
+      <img src="image/logo.png" alt="Logo TTG Network" class="logo">
+    </div>
+    <h1>Foire Aux Questions</h1>
+    <p>Des questions fréquentes à propos de nos services</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="formulaire.html">Formulaires</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="faq.html" class="active">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="temoignages.html">témoignages</a></li>
+      <li><a href="equipe.html" class="active">Équipe</a></li>
+      <li><a href="mentions.html" class="active">Mentions</a></li>
+
+
+
+    </ul>
+  </nav>
+
+  <!-- SECTION FAQ -->
+  <section class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">Quels services informatiques proposez-vous ?</div>
+      <div class="faq-answer">Nous proposons la maintenance, l’installation de réseaux, le développement web/mobile, la formation IT et l'installation de caméras.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Proposez-vous des services aux particuliers et aux entreprises ?</div>
+      <div class="faq-answer">Oui, nous répondons aux besoins des particuliers, PME et grandes entreprises.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Comment demander un service ou une location ?</div>
+      <div class="faq-answer">Utilisez notre formulaire dans la section “Espace formulaire” pour faire votre demande rapidement.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Où êtes-vous situés ?</div>
+      <div class="faq-answer">Nous sommes implantés dans la région (adresse exacte à définir), mais nos services peuvent s’étendre au niveau national et international.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Quels types de biens gérez-vous ?</div>
+      <div class="faq-answer">Nous gérons la location et vente de maisons, parcelles, ainsi que la vente/location de véhicules.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 T.T.G Network. Tous droits réservés.</p>
+    <p>contact@ttg-network.com | +242 05 742 5400</p>
+  </footer>
+
+  <!-- SCRIPT pour l'effet déroulant -->
+  <script>
+    const questions = document.querySelectorAll(".faq-question");
+
+    questions.forEach(q => {
+      q.addEventListener("click", () => {
+        const answer = q.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+
+</body>
+</html>

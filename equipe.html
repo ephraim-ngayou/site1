@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notre Équipe - T.T.G Network</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .equipe-container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .member {
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      background-color: #f9f9f9;
+    }
+
+    .member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .member h3 {
+      margin: 0.5rem 0;
+      color: #004080;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="image/logo.png" alt="Logo TTG Network" class="logo">
+    </div>
+    <h1>Notre Équipe</h1>
+    <p>Découvrez les visages derrière T.T.G Network</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="formulaire.html">Formulaires</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="temoignages.html">Témoignages</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="mentions.html" class="active">Mentions</a></li>
+      <li><a href="equipe.html" class="active">Équipe</a></li>
+    </ul>
+  </nav>
+
+  <section class="equipe-container">
+    <div class="member">
+      <img src="images/avatar1.png" alt="Gaëtane">
+      <h3>Gaëtane Mvibundulu</h3>
+      <p>Directrice Générale</p>
+    </div>
+    <div class="member">
+      <img src="images/avatar2.png" alt="Technicien">
+      <h3>Jean K.</h3>
+      <p>Technicien Réseaux & Sécurité</p>
+    </div>
+    <div class="member">
+      <img src="images/avatar3.png" alt="Développeur">
+      <h3>Aline T.</h3>
+      <p>Développeuse Web & Mobile</p>
+    </div>
+    <div class="member">
+      <img src="images/avatar4.png" alt="Formateur">
+      <h3>Samuel D.</h3>
+      <p>Formateur en IT Essentials</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 T.T.G Network. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

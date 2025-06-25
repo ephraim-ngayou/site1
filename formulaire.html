@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaires - T.T.G Network</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="image/logo.png" alt="Logo TTG Network" class="logo">
+    </div>
+    <h1>Espace Formulaire</h1>
+    <p>Créez, modifiez ou demandez un service</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="formulaire.html" class="active">Espace Formulaire</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="temoignages.html">témoignages</a></li>
+      <li><a href="equipe.html" class="active">Équipe</a></li>
+      <li><a href="mentions.html" class="active">Mentions</a></li>
+
+
+
+    </ul>
+  </nav>
+
+  <!-- FORMULAIRE CRÉATION DE COMPTE -->
+  <section>
+    <h3>📝 Création de compte client</h3>
+    <form id="form-creation">
+      <input type="text" name="nom" placeholder="Nom complet" required><br>
+      <input type="email" name="email" placeholder="Adresse e-mail" required><br>
+      <input type="password" name="motdepasse" placeholder="Mot de passe" required><br>
+      <button type="submit" class="btn">Créer un compte</button>
+    </form>
+  </section>
+
+  <!-- FORMULAIRE MISE À JOUR PROFIL -->
+  <section>
+    <h3>🔄 Mise à jour du profil client</h3>
+    <form id="form-update">
+      <input type="email" name="email" placeholder="Votre e-mail" required><br>
+      <input type="text" name="newName" placeholder="Nouveau nom"><br>
+      <input type="password" name="newPassword" placeholder="Nouveau mot de passe"><br>
+      <button type="submit" class="btn-secondary">Mettre à jour</button>
+    </form>
+  </section>
+
+  <!-- FORMULAIRE DE DEMANDE DE SERVICE -->
+  <section>
+    <h3>📬 Demande de service</h3>
+    <form id="form-service">
+      <input type="text" name="nom" placeholder="Votre nom" required><br>
+      <input type="email" name="email" placeholder="Votre email" required><br>
+      <select name="service" required>
+        <option value="">-- Choisissez un service --</option>
+        <option value="maintenance">Maintenance informatique</option>
+        <option value="reseau">Installation réseau</option>
+        <option value="formation">Formation IT</option>
+        <option value="developpement">Développement application</option>
+        <option value="camera">Installation caméra</option>
+        <option value="immobilier">Service immobilier</option>
+      </select><br>
+      <textarea name="message" placeholder="Décrivez votre besoin" rows="4" required></textarea><br>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 T.T.G Network. Tous droits réservés.</p>
+    <p>contact@ttg-network.com | +242 06 123 45 67</p>
+  </footer>
+
+</body>
+</html>
